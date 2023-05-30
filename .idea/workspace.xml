@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bd3d2036-cd14-4f5b-9e33-9fd6f8280eef" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/controller/FornecedorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/controller/FornecedorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/controller/ProdutoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/entity/ProdutoEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/message/KafkaConsumerConfigs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/message/KafkaConsumerConfigs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/message/KafkaConsumerMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/message/KafkaConsumerMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/model/ProdutoVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/repository/ProdutoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/service/FornecedorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/service/FornecedorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/service/FornecedorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/service/FornecedorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/service/ProdutoServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/service/ProdutoServide.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/controller/FornecedorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/com/tchakabum/controller/FornecedorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/controller/ProdutoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/entity/ProdutoEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/message/KafkaConsumerConfigs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/com/tchakabum/message/KafkaConsumerConfigs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/message/KafkaConsumerMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/com/tchakabum/message/KafkaConsumerMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/model/ProdutoVO$ProdutoVOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/model/ProdutoVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/repository/ProdutoRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/service/FornecedorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/com/tchakabum/service/FornecedorService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/service/FornecedorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/com/tchakabum/service/FornecedorServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/service/ProdutoServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/service/ProdutoServide.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Pw5fWFNyGnucQM3uDm0mU1Tboi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="api.com.tchakabum.entity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\bigjh\OneDrive\Documentos\Projetos apps faculdade\api2-tchakabum\src\main\java\api\com\tchakabum" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ECommerceTchakabumApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="api.com.tchakabum.ECommerceTchakabumApplication" />
+      <module name="api-tchakabum-fornecedores" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.com.tchakabum.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ECommerceTchakabumApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd3d2036-cd14-4f5b-9e33-9fd6f8280eef" name="Changes" comment="" />
+      <created>1684355407574</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684355407574</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
