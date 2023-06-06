@@ -16,10 +16,10 @@ import java.time.LocalDate;
 public class FornecedorVO {
 
     private Long id;
-    private String nomeFornecedor;
-    private LocalDate dataAbertura;
-    private String cnpjFornecedor;
-    private String emailFornecedor;
+    private String nome;
+    private LocalDate dataAbertura; 
+    private String cnpj;
+    private String email;
     private String razaoSocial;
     private String logradouro;
     private String cep;

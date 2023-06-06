@@ -11,6 +11,8 @@ public interface FornecedorService {
     void criarFornecedor(FornecedorVO fornecedorVO);
 
     List<FornecedorVO> getFornecedores();
+    
+    FornecedorVO buscarPorId(Long id);
 
     void alterarFornecedor(FornecedorVO fornecedorVO, Long id);
 

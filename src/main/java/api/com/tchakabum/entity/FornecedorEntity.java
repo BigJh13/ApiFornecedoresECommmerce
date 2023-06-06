@@ -19,10 +19,10 @@ public class FornecedorEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID_FORNECEDOR")
-    private Long idFornecedor;
+    private Long id;
 
     @Column(name = "NOME_FORNECEDOR")
-    private String nomeFornecedor;
+    private String nome;
 
     @Column(name = "DATA_ABERTURA")
     private LocalDate dataAbertura;

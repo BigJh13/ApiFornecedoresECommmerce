@@ -23,9 +23,14 @@ public class FornecedorController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @GetMapping("/todos")
+    @GetMapping()
     public ResponseEntity<List<FornecedorVO>> listarFornecedor() {
         return ResponseEntity.status(HttpStatus.FOUND).body(fornecedorService.getFornecedores());
+    }
+    
+    @GetMapping("/{id}")
+    public ResponseEntity<FornecedorVO> buscarPorId(@PathVariable Long id) {
+        return ResponseEntity.status(HttpStatus.FOUND).body(fornecedorService.buscarPorId(id));
     }
 
     @PutMapping("/{id}")

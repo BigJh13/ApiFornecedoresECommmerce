@@ -1,14 +1,15 @@
 package api.com.tchakabum.service;
 
-import api.com.tchakabum.entity.FornecedorEntity;
-import api.com.tchakabum.model.FornecedorVO;
-import api.com.tchakabum.repository.FornecedorRepository;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.NoSuchElementException;
+import api.com.tchakabum.entity.FornecedorEntity;
+import api.com.tchakabum.exception.NaoEncontradoException;
+import api.com.tchakabum.model.FornecedorVO;
+import api.com.tchakabum.repository.FornecedorRepository;
 
 @Service
 public class FornecedorServiceImpl implements FornecedorService{
@@ -30,15 +31,21 @@ public class FornecedorServiceImpl implements FornecedorService{
         });
         return listaFornecedores;
     }
+    
+    @Override
+    public FornecedorVO buscarPorId(Long id) {
+    	FornecedorEntity fornecedor = fornecedorRepository.findById(id).orElseThrow(() -> new NaoEncontradoException("Nenhum fornecedor encontrado"));
+    	return mapFornecedorEntityParaVO(fornecedor);
+    }
 
     @Override
     public void alterarFornecedor(FornecedorVO fornecedorVO, Long id) {
 
         fornecedorRepository.findById(id).ifPresentOrElse(item -> {
-            item.setNomeFornecedor(fornecedorVO.getNomeFornecedor());
+            item.setNome(fornecedorVO.getNome());
             item.setDataAbertura(fornecedorVO.getDataAbertura());
-            item.setCnpj(fornecedorVO.getCnpjFornecedor());
-            item.setEmail(fornecedorVO.getEmailFornecedor());
+            item.setCnpj(fornecedorVO.getCnpj());
+            item.setEmail(fornecedorVO.getEmail());
             item.setRazaoSocial(fornecedorVO.getRazaoSocial());
             item.setLogradouro(fornecedorVO.getLogradouro());
             item.setCep(fornecedorVO.getCep());
@@ -46,23 +53,23 @@ public class FornecedorServiceImpl implements FornecedorService{
             item.setBairro(fornecedorVO.getBairro());
             item.setEstado(fornecedorVO.getEstado());
             item.setCidade(fornecedorVO.getCidade());
-        }, ()->{
-            throw new NoSuchElementException();
+        }, () -> {throw new NaoEncontradoException("Nenhum fornecedor encontrado");
         });
     }
 
     @Override
     public void excluirFornecedor(Long id) {
-        fornecedorRepository.deleteById(id);
+    	FornecedorEntity fornecedor = fornecedorRepository.findById(id).orElseThrow(() -> new NaoEncontradoException("Nenhum fornecedor encontrado"));
+        fornecedorRepository.delete(fornecedor);
     }
 
     private FornecedorVO mapFornecedorEntityParaVO(FornecedorEntity fornecedorEntity) {
 
         return FornecedorVO.builder()
-                .nomeFornecedor(fornecedorEntity.getNomeFornecedor())
+                .nome(fornecedorEntity.getNome())
                 .dataAbertura(fornecedorEntity.getDataAbertura())
-                .cnpjFornecedor(fornecedorEntity.getCnpj())
-                .emailFornecedor(fornecedorEntity.getEmail())
+                .cnpj(fornecedorEntity.getCnpj())
+                .email(fornecedorEntity.getEmail())
                 .razaoSocial(fornecedorEntity.getRazaoSocial())
                 .logradouro(fornecedorEntity.getLogradouro())
                 .cep(fornecedorEntity.getCep())
@@ -77,10 +84,10 @@ public class FornecedorServiceImpl implements FornecedorService{
 
         FornecedorEntity fornecedorEntity = new FornecedorEntity();
 
-        fornecedorEntity.setNomeFornecedor(fornecedorVO.getNomeFornecedor());
+        fornecedorEntity.setNome(fornecedorVO.getNome());
         fornecedorEntity.setDataAbertura(fornecedorVO.getDataAbertura());
-        fornecedorEntity.setCnpj(fornecedorVO.getCnpjFornecedor());
-        fornecedorEntity.setEmail(fornecedorVO.getEmailFornecedor());
+        fornecedorEntity.setCnpj(fornecedorVO.getCnpj());
+        fornecedorEntity.setEmail(fornecedorVO.getEmail());
         fornecedorEntity.setRazaoSocial(fornecedorVO.getRazaoSocial());
         fornecedorEntity.setLogradouro(fornecedorVO.getLogradouro());
         fornecedorEntity.setCep(fornecedorVO.getCep());
