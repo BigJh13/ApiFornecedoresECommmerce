@@ -18,9 +18,10 @@ public class FornecedorServiceImpl implements FornecedorService{
     private FornecedorRepository fornecedorRepository;
 
     @Override
-    public void criarFornecedor(FornecedorVO fornecedorVO) {
+    public FornecedorVO criarFornecedor(FornecedorVO fornecedorVO) {
         FornecedorEntity fornecedorEntity = mapFornecedorVOParaEntity(fornecedorVO);
-        fornecedorRepository.save(fornecedorEntity);
+        fornecedorEntity = fornecedorRepository.save(fornecedorEntity);
+        return mapFornecedorEntityParaVO(fornecedorEntity);
     }
 
     @Override

@@ -1,13 +1,22 @@
 package api.com.tchakabum.controller;
 
+import java.util.List;
+
 import api.com.tchakabum.model.FornecedorVO;
 import api.com.tchakabum.service.FornecedorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/fornecedor")
@@ -18,9 +27,9 @@ public class FornecedorController {
     private FornecedorService fornecedorService;
 
     @PostMapping
-    public ResponseEntity criarFornecedor(@RequestBody FornecedorVO fornecedorVO){
-        fornecedorService.criarFornecedor(fornecedorVO);
-        return new ResponseEntity<>(HttpStatus.OK);
+    @ResponseStatus(HttpStatus.CREATED)
+    public FornecedorVO criarFornecedor(@RequestBody FornecedorVO fornecedorVO){
+        return fornecedorService.criarFornecedor(fornecedorVO);
     }
 
     @GetMapping()
@@ -29,19 +38,17 @@ public class FornecedorController {
     }
     
     @GetMapping("/{id}")
-    public ResponseEntity<FornecedorVO> buscarPorId(@PathVariable Long id) {
-        return ResponseEntity.status(HttpStatus.FOUND).body(fornecedorService.buscarPorId(id));
+    public FornecedorVO buscarPorId(@PathVariable Long id) {
+        return fornecedorService.buscarPorId(id);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity editarFornecedor(@RequestBody FornecedorVO fornecedorVO, @PathVariable("id") Long id) {
-        fornecedorService.alterarFornecedor(fornecedorVO, id);
-        return new ResponseEntity<>(HttpStatus.OK);
+    public void editarFornecedor(@RequestBody FornecedorVO fornecedor, @PathVariable("id") Long id) {
+        fornecedorService.alterarFornecedor(fornecedor, id);
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity deletarFornecedor(@PathVariable("id") Long id) {
+    public void deletarFornecedor(@PathVariable("id") Long id) {
         fornecedorService.excluirFornecedor(id);
-        return new ResponseEntity<>(HttpStatus.OK);
     }
 }

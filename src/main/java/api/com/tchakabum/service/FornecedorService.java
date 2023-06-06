@@ -8,7 +8,7 @@ import java.util.List;
 @Service
 public interface FornecedorService {
 
-    void criarFornecedor(FornecedorVO fornecedorVO);
+    FornecedorVO criarFornecedor(FornecedorVO fornecedorVO);
 
     List<FornecedorVO> getFornecedores();
     
@@ -17,5 +17,4 @@ public interface FornecedorService {
     void alterarFornecedor(FornecedorVO fornecedorVO, Long id);
 
     void excluirFornecedor(Long id);
-
 }
