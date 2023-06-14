@@ -67,6 +67,7 @@ public class FornecedorServiceImpl implements FornecedorService{
     private FornecedorVO mapFornecedorEntityParaVO(FornecedorEntity fornecedorEntity) {
 
         return FornecedorVO.builder()
+                .id(fornecedorEntity.getId())
                 .nome(fornecedorEntity.getNome())
                 .dataAbertura(fornecedorEntity.getDataAbertura())
                 .cnpj(fornecedorEntity.getCnpj())
@@ -85,6 +86,7 @@ public class FornecedorServiceImpl implements FornecedorService{
 
         FornecedorEntity fornecedorEntity = new FornecedorEntity();
 
+        fornecedorEntity.setId(fornecedorVO.getId());
         fornecedorEntity.setNome(fornecedorVO.getNome());
         fornecedorEntity.setDataAbertura(fornecedorVO.getDataAbertura());
         fornecedorEntity.setCnpj(fornecedorVO.getCnpj());

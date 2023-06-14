@@ -5,33 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd3d2036-cd14-4f5b-9e33-9fd6f8280eef" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/controller/FornecedorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/controller/FornecedorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/controller/ProdutoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/entity/ProdutoEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/message/KafkaConsumerConfigs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/message/KafkaConsumerConfigs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/message/KafkaConsumerMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/message/KafkaConsumerMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/model/ProdutoVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/repository/ProdutoRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/service/FornecedorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/service/FornecedorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/model/FornecedorVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/model/FornecedorVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/service/FornecedorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/service/FornecedorServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/service/ProdutoServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/service/ProdutoServide.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/controller/FornecedorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/com/tchakabum/controller/FornecedorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/controller/ProdutoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/entity/ProdutoEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/message/KafkaConsumerConfigs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/com/tchakabum/message/KafkaConsumerConfigs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/message/KafkaConsumerMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/com/tchakabum/message/KafkaConsumerMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/model/ProdutoVO$ProdutoVOBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/model/ProdutoVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/repository/ProdutoRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/service/FornecedorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/com/tchakabum/service/FornecedorService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/service/FornecedorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/com/tchakabum/service/FornecedorServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/service/ProdutoServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/com/tchakabum/service/ProdutoServide.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +50,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../api-tchakabum-produtos" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
