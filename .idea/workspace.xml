@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bd3d2036-cd14-4f5b-9e33-9fd6f8280eef" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/model/FornecedorVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/model/FornecedorVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/service/FornecedorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/com/tchakabum/service/FornecedorServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,5 +103,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/api_tchakabum_fornecedores$ECommerceTchakabumApplication.ic" NAME="ECommerceTchakabumApplication Coverage Results" MODIFIED="1686705114490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>api.com.tchakabum.*</FILTER>
+    </SUITE>
   </component>
 </project>

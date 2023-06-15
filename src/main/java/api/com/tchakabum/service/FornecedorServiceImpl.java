@@ -54,7 +54,10 @@ public class FornecedorServiceImpl implements FornecedorService{
             item.setBairro(fornecedorVO.getBairro());
             item.setEstado(fornecedorVO.getEstado());
             item.setCidade(fornecedorVO.getCidade());
-        }, () -> {throw new NaoEncontradoException("Nenhum fornecedor encontrado");
+
+            fornecedorRepository.save(item);
+
+            }, () -> {throw new NaoEncontradoException("Nenhum fornecedor encontrado");
         });
     }
 
